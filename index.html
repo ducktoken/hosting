@@ -471,6 +471,34 @@
         .feature__img {
             width: 15rem
         }
+		/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+		.icon-bar {
+		  position: sticky;
+		  top: 0%;
+		  -webkit-transform: translateY(-50%);
+		  -ms-transform: translateY(-50%);
+		  transform: translateY(-50%);
+		}
+
+		/* Style the icon bar links */
+		.icon-bar a {
+		  display: block;
+		  text-align: center;
+		  padding: 18px;
+		  transition: all 0.3s ease;
+		  color: white;
+		  font-size: 20px;
+		}
+
+		/* Style the social media icons with color, if you want */
+		.icon-bar a:hover {
+		  background-color: #000;
+		}
+
+		.telegram {
+		  background: #0065e8;
+		  color: white;
+		}
     </style>
 <script async="" src="gtag/js.js?id=G-RYSRM7TGEN"></script>
 
@@ -522,7 +550,10 @@
 <li class="nav-item">
 <a class="nav-link" href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x9f4735b025eb76f8f3b1987a764966ebbe4a46dd&inputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56" target="_blank">Buy Duck</a>
 </li>
-
+<div>
+<li class="icon-bar">
+<a class="telegram" href="#stats"> <i class="fa fa-telegram"></i> Telegram</a>
+</li></div>
 
 </ul>
 </div> 
