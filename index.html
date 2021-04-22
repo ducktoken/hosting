@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 
@@ -421,7 +421,32 @@
             background: linear-gradient(to right, #0065e8 0%, #11a2f1 50%, #0065e8 100%);
             background-size: 200% auto
         }
-
+		.btn-twitter {
+            display: inline-block;
+            font-weight: 700;
+            text-align: center;
+            white-space: nowrap;
+            text-transform: uppercase;
+            vertical-align: middle;
+            min-width: 15rem;
+            border: 0px;
+            padding: 0 3.2rem;
+            font-size: 1.4rem;
+            line-height: 5rem;
+            color: #fff !important;
+            z-index: 5;
+            border-radius: 4px;
+            background: linear-gradient(to right, #c7957d5 0%, #7957d5 50%, #7957d5 100%);
+            background-size: 200% auto;
+            letter-spacing: 1px;
+            box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1)
+        }
+		
+        .btn-twitter {
+            background: linear-gradient(to right, #0093ee 0%, #0093ee 50%, #0093ee 100%);
+            background-size: 200% auto
+        }
+		
         .moon-features-area {
             padding-top: 1rem;
             position: relative;
@@ -446,9 +471,57 @@
         .feature__img {
             width: 15rem
         }
-    </style>
+		/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+		
+		.icon-bar {
+		  position: Fixed;
+		  top: 50%;
+		  -webkit-transform: translateY(-50%);
+		  -ms-transform: translateY(-50%);
+		  transform: translateY(-50%);
+		}
 
+		/* Style the icon bar links */
+		.icon-bar a {
+		  display: block;
+		  text-align: center;
+		  padding: 16px;
+		  transition: all 0.3s ease;
+		  color: white;
+		  font-size: 20px;
+		}
+
+		/* Style the social media icons with color, if you want */
+		.icon-bar a:hover {
+		  background-color: #000;
+		}
+
+
+		.twitter {
+		  background: #55ACEE;
+		  color: white;
+		}
+
+
+		.youtube {
+		  background: #bb0000;
+		  color: white;
+		}
+
+		.telegram {
+		  background: #0093ee;
+		  color: white;
+		}
+
+		.discord {
+		  background: #714dd2;
+		  color: white;
+		}
+    </style>
+	
+	
 <script async="" src="gtag/js.js?id=G-RYSRM7TGEN"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -510,6 +583,7 @@
 </header>
 
 
+
 <section class="banner-area bg_cover" style="background-image: url(assets/img/illustrations/banner-bg.webp);">
 <div class="container">
 <div class="row justify-content-center">
@@ -519,25 +593,25 @@
 <h1 class="title"> <span class="title__primary">  <br> <br> Duck Token </span></h1>
 
 <ul>
+<!-- Load font awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
 <li><a class="main-btn main-btn-2" href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x9f4735b025eb76f8f3b1987a764966ebbe4a46dd&inputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56" rel="noreferrer" target="_blank">Buy Duck</a></li>
 </ul>
+<!-- The social media icon bar -->
+
 </div>
 </div>
 </div>
 </div>
 
-<div class="social">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<ul>
-
-<li><a href="https://twitter.com/Duck_Token" target="_blank" rel="noreferrer"><i class="fa fa-twitter"></i> Twitter</span></a></li>
-
-<li><a href="https://t.me/DuckTokenIo" target="_blank" rel="noreferrer"><i class="fa fa-telegram"></i> Telegram</span></a></li>
-
-</ul>
-</div>
 </section>
-
+<div class="icon-bar">
+  <a href="https://twitter.com/Duck_Token?s=08" class="twitter"><i class="fa fa-twitter"></i> Twitter</a>
+  <a href="https://t.me/DuckTokenIo" class="telegram"><i class="fa fa-telegram"></i> Telegram</a>
+</div>
 
 <section class="moon-features-area" id="about">
 <div class="container-fluid">
@@ -629,8 +703,11 @@ transactions.</p>
 <a data-v-99ccb1a4="" href="https://coinstats.app/" rel="noopener" target="_blank">
 <img data-v-99ccb1a4="" src="assets/img/icon/coinstats-logo.png"></a>
 </div>
+
+
 </div>
 </div></div>
+
 
 <section class="tokenomics-area bg_cover-2" style="background-image: url(assets/img/illustrations/banner-bg-2.webp);" id="stats">
 <div class="container">
